@@ -217,6 +217,11 @@
     padding: 1rem 0;
   }
 
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .nav-links {
     display: none;
   }
@@ -244,6 +249,10 @@
   .footer-grid {
     grid-template-columns: 1fr;
   }
+
+  .footer {
+    padding: 3rem 0 2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -254,4 +263,24 @@
   .nav-container {
     padding: 0 1rem;
   }
+
+  .mobile-menu {
+    top: 60px;
+    padding: 1rem 0.75rem;
+  }
+
+  .mobile-nav-link {
+    padding: 0.75rem 0.5rem;
+  }
 }
+
+.main-content {
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 80px;
+  }
+}
+
