@@ -1,0 +1,88 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content" @fadeInUp>
+      <h1 class="hero-title">Technology for Innovators</h1>
+      <p class="hero-subtitle">Engineering solutions that drive excellence in mechanical, civil, and automobile industries</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" routerLink="/products">Explore Products</button>
+        <button class="btn btn-ghost" routerLink="/about">Learn More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div *ngFor="let stat of features" class="stat-card">
+        <div class="stat-icon">{{ stat.icon }}</div>
+        <div class="stat-number">{{ stat.number }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Snippet -->
+<section class="about-snippet">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2>Who We Are</h2>
+        <p>Established in 2009, Unimax Technologies has marked an enviable presence in the engineering industry. We specialize in providing prompt, quality products at competitive rates across mechanical, civil, and automobile engineering sectors.</p>
+        <p>Our commitment to excellence, integrity, and customer satisfaction drives everything we do. Combined with cutting-edge production facilities and years of industrial experience, we deliver innovative solutions globally.</p>
+        <a routerLink="/about" class="btn btn-primary">Discover Our Story</a>
+      </div>
+      <div class="about-visual">
+        <div class="visual-box box-1">🏭</div>
+        <div class="visual-box box-2">⚙️</div>
+        <div class="visual-box box-3">🔬</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+  <div class="container">
+    <h2 class="section-title">What We Do</h2>
+    <p class="section-subtitle">Comprehensive engineering solutions tailored to your needs</p>
+    <div class="services-grid">
+      <div *ngFor="let service of services; let i = index" class="service-card" @fadeInUp>
+        <div class="service-icon">{{ service.icon }}</div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products Preview -->
+<section class="products-preview">
+  <div class="container">
+    <h2 class="section-title">Featured Products</h2>
+    <p class="section-subtitle">Innovative products engineered for performance</p>
+    <div class="products-showcase">
+      <div *ngFor="let product of products" class="product-item">
+        <div class="product-icon">{{ product.icon }}</div>
+        <p>{{ product.name }}</p>
+      </div>
+    </div>
+    <div class="cta-center">
+      <a routerLink="/products" class="btn btn-primary">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Transform Your Project?</h2>
+      <p>Join hundreds of satisfied clients who trust Unimax Technologies</p>
+      <a routerLink="/contact" class="btn btn-primary btn-large">Get In Touch</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,98 @@
+<!-- Hero Section -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Our Products</h1>
+    <p>Innovative Solutions for Industrial Excellence</p>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="section">
+  <div class="container">
+    <div class="intro-text">
+      <p>We are involved in manufacturing, exporting, trading and supplying a wide assortment of innovative and high-quality products. Our product range includes electronic fare meters, speed sensors, vehicle tracking systems, fuel pumps, safety devices and more.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Category Filter -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Product Categories</h2>
+    <div class="category-filter">
+      <button *ngFor="let category of categories" 
+              (click)="selectCategory(category)"
+              [class.active]="selectedCategory === category"
+              class="category-btn">
+        {{ category }}
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Products Grid -->
+<section class="section">
+  <div class="container">
+    <div class="products-grid">
+      <div *ngFor="let product of getFilteredProducts()" class="product-card">
+        <div class="product-header">
+          <div class="product-icon">{{ product.icon }}</div>
+          <span class="product-category">{{ product.category }}</span>
+        </div>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <div class="product-footer">
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Specifications -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Why Our Products Stand Out</h2>
+    <div class="specs-grid">
+      <div class="spec-item">
+        <div class="spec-icon">✓</div>
+        <h4>ISO Certified</h4>
+        <p>All products meet international quality standards and certifications</p>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">✓</div>
+        <h4>Advanced Technology</h4>
+        <p>Incorporating latest engineering innovations and technical advancements</p>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">✓</div>
+        <h4>Reliable Performance</h4>
+        <p>Tested for durability, reliability and consistent performance</p>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">✓</div>
+        <h4>Cost Effective</h4>
+        <p>Premium quality at competitive and affordable pricing</p>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">✓</div>
+        <h4>Global Standards</h4>
+        <p>Designed for international markets and global applications</p>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">✓</div>
+        <h4>Expert Support</h4>
+        <p>Technical support and after-sales service for all products</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Interested in Our Products?</h2>
+    <p>Contact us for pricing, specifications, and customization options</p>
+    <a routerLink="/contact" class="btn btn-primary btn-large">Request Quote</a>
+  </div>
+</section>

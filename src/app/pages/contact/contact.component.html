@@ -1,0 +1,134 @@
+<!-- Hero Section -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p>We're Here to Help</p>
+  </div>
+</section>
+
+<!-- Contact Info -->
+<section class="section">
+  <div class="container">
+    <div class="contact-info-grid">
+      <div *ngFor="let info of contactInfo" class="info-card">
+        <div class="info-icon">{{ info.icon }}</div>
+        <h3>{{ info.title }}</h3>
+        <div *ngFor="let detail of info.details" class="info-detail">
+          {{ detail }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form & Map -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Form -->
+      <div class="contact-form-wrapper">
+        <h2>Send us a Message</h2>
+        <form (ngSubmit)="onSubmit()" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" [(ngModel)]="formData.name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" [(ngModel)]="formData.email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" [(ngModel)]="formData.phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" [(ngModel)]="formData.subject" name="subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" [(ngModel)]="formData.message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="reset" (click)="resetForm()" class="btn btn-secondary">Clear</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="contact-info-wrapper">
+        <h2>Why Contact Us?</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-number">🚀</div>
+            <div>
+              <h4>Quick Response</h4>
+              <p>We respond to inquiries within 24 hours</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-number">👥</div>
+            <div>
+              <h4>Expert Support</h4>
+              <p>Get guidance from our experienced team</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-number">💼</div>
+            <div>
+              <h4>Custom Solutions</h4>
+              <p>Tailored solutions for your specific needs</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-number">🌍</div>
+            <div>
+              <h4>Global Reach</h4>
+              <p>Serving clients worldwide with excellence</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="business-hours">
+          <h3>Business Hours</h3>
+          <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM IST</p>
+          <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM IST</p>
+          <p><strong>Sunday:</strong> Closed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- More Ways to Connect -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">More Ways to Connect</h2>
+    <div class="connect-grid">
+      <div class="connect-card">
+        <div class="connect-icon">💬</div>
+        <h4>WhatsApp</h4>
+        <p>Chat with us on WhatsApp for quick responses</p>
+        <a href="https://api.whatsapp.com/send?phone=918438377771" target="_blank" class="btn btn-ghost">Start Chat</a>
+      </div>
+      <div class="connect-card">
+        <div class="connect-icon">📧</div>
+        <h4>Email</h4>
+        <p>Send us detailed inquiries via email</p>
+        <a href="mailto:unimax_2@yahoo.com" class="btn btn-ghost">Send Email</a>
+      </div>
+      <div class="connect-card">
+        <div class="connect-icon">📞</div>
+        <h4>Phone</h4>
+        <p>Call us directly for immediate assistance</p>
+        <a href="tel:+918438377771" class="btn btn-ghost">Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>

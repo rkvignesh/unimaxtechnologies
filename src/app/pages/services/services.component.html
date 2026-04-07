@@ -1,0 +1,98 @@
+<!-- Hero Section -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p>Comprehensive Engineering Solutions</p>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="section">
+  <div class="container">
+    <div class="intro-text">
+      <p>Unimax Technologies has enormous experience in catering vigorous mechanical engineering services to various clients globally. Our team is capable of designing, manufacturing, building, developing, testing, evaluating and analyzing the functions of various mechanical systems.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services Grid -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Our Service Offerings</h2>
+    <div class="services-grid">
+      <div *ngFor="let service of services" class="service-card">
+        <div class="service-top">
+          <div class="service-icon">{{ service.icon }}</div>
+          <h3>{{ service.title }}</h3>
+        </div>
+        <p class="service-description">{{ service.description }}</p>
+        <div class="service-features">
+          <div *ngFor="let feature of service.features" class="feature-tag">
+            {{ feature }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why Choose Our Services?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">💰</div>
+        <h4>Affordable Pricing</h4>
+        <p>Competitive rates compared to other service providers without compromising quality.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">⏱️</div>
+        <h4>Timely Delivery</h4>
+        <p>We understand deadlines. Dynamic solutions delivered within limited time frames.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">✅</div>
+        <h4>Quality Assurance</h4>
+        <p>Stringent quality checks ensure every product meets our high standards.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">👥</div>
+        <h4>Expert Team</h4>
+        <p>Competent professionals dedicated to achieving your organizational goals.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🔧</div>
+        <h4>Customization</h4>
+        <p>Solutions tailored to your specific requirements and business needs.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🌍</div>
+        <h4>Global Experience</h4>
+        <p>Serving clients across multiple industries and geographical regions worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Our Clients</h2>
+    <p class="subtitle">Trusted by leading companies across industries</p>
+    <div class="clients-grid">
+      <div *ngFor="let client of clients" class="client-logo">
+        {{ client }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Get Started?</h2>
+    <p>Contact us today to discuss your engineering needs</p>
+    <a routerLink="/contact" class="btn btn-primary btn-large">Contact Us Now</a>
+  </div>
+</section>

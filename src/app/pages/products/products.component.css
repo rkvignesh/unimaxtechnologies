@@ -1,0 +1,241 @@
+.page-hero {
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.85) 0%, rgba(0, 91, 196, 0.85) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="1200" height="600" fill="url(%23dots)"/></svg>');
+  background-size: cover, auto;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+.page-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-hero p {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.section.bg-light {
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8f0f7 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><pattern id="hexagon" patternUnits="userSpaceOnUse" width="60" height="60"><path d="M 30 0 L 50 15 L 50 45 L 30 60 L 10 45 L 10 15 Z" fill="none" stroke="rgba(0,113,227,0.05)" stroke-width="1"/></pattern></defs><rect width="1200" height="400" fill="url(%23hexagon)"/></svg>');
+  background-size: cover, auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #424245;
+}
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #E5E5E7;
+  background: white;
+  color: #424245;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  border-color: #0071E3;
+  color: #0071E3;
+}
+
+.category-btn.active {
+  background: #0071E3;
+  color: white;
+  border-color: #0071E3;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #E5E5E7;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #0071E3;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.product-icon {
+  font-size: 2.5rem;
+}
+
+.product-category {
+  display: inline-block;
+  background: #F5F5F7;
+  color: #424245;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-card p {
+  color: #424245;
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.product-footer {
+  margin-top: auto;
+}
+
+.learn-more {
+  color: #0071E3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.learn-more:hover {
+  transform: translateX(5px);
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.spec-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #E5E5E7;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.spec-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.spec-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #0071E3;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.spec-item h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.spec-item p {
+  color: #424245;
+  font-size: 0.9375rem;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #0071E3 0%, #005fc4 100%);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.btn-large {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.0625rem;
+}
+
+.cta-section .btn-primary {
+  background-color: white;
+  color: #0071E3;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .category-filter {
+    flex-direction: column;
+  }
+
+  .category-btn {
+    width: 100%;
+  }
+}
